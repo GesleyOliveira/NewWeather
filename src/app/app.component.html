@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>New Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+</head>
+
+<body onload="noticias()">
+    <header>
+        <div class="container_12">
+            <div class="grid_12">
+                <h1 class="title-1">New Weather</h1>
+                <div class="fright">
+                    <div class="clearfix">
+                        <ul class="top_menu clearfix">
+                            <li><a routerLink="/login">Entrar</a>|</li>
+                            <li><a routerLink="/cadastro/novo">Cadastrar</a>|</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_12">
+                <nav class="full-width">
+                    <ul class="sf-menu clearfix" id="barraNav">
+                        <li><a routerLink="/inicio">Inicio</a></li>
+                        <li><a routerLink="/noticias">Noticias</a></li>
+                        <li><a routerLink="/redes-estacoes">Redes de Estações</a></li>
+                        <li><a routerLink="/contatos">Contatos</a></li>
+                        <li><a routerLink="/planos">Planos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <router-outlet></router-outlet>
+    <footer>
+        <div class="container_12 border-bot">
+            <div class="row">
+                <div class="grid_2 w1">
+                    <h6>Clima Local</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Dados Históricos</a></li>
+                        <li><a href="#">Estações Climáticas</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Mapas &amp; Radar</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Radar</a></li>
+                        <li><a href="#">Satelite</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Clima Tempo</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Informativos de Tempestades</a></li>
+                        <li><a href="#">Alestas de Chuvas</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Fotos &amp; Videos</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Galerias de Fotos</a></li>
+                        <li><a href="#">Vídeos</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Blog Fatec</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Informações Meteorológicas</a></li>
+                        <li><a href="#">Membros</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 w1">
+                    <h6>Clima</h6>
+                    <ul class="list-2">
+                        <li><a href="#">Mudança Climática</a></li>
+                        <li><a href="#">Evidencias</a></li>
+                        <li><a href="#">Registros extremos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row f-last">
+                <div class="fleft">
+                    Fatec Votorantim © 2023 &nbsp;|&nbsp; <a class="h-underline" href="#">Política de Privacidade</a>
+                    &nbsp;|&nbsp; Todos os direitos reservados
+                    <!--{%FOOTER_LINK} -->
+                </div>
+                <div class="fright">
+                    <div class="list-services">
+                        <a href="https://www.instagram.com/fatec.votorantim/" class="soc-1"><i class="icon-twitter-sign" target="_blank" rel="noopener noreferrer"></i>twitter</a>
+                        <a href="https://br.linkedin.com/company/fatec-votorantim?original_referer=https%3A%2F%2Fwww.google.com%2F" class="soc-2"><i class="icon-facebook-sign"></i>facebook</a>
+                        <a href="https://www.cps.sp.gov.br/fatecs/fatec-votorantim/" class="soc-3"><i class="icon-google-plus-sign" target="_blank" rel="noopener noreferrer"></i>Google+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

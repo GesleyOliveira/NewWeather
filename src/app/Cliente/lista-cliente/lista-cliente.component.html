@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<div class="container_12">
+    <div class="admin-header">
+      <h1>Página do Administrador</h1>
+      <button routerLink="/inicio" class="btn btn-danger">Sair</button>
+    </div>
+    <div class="container row-md-12">
+      <button class="btn btn-outline-primary" routerLink="/admHome">
+        Início
+      </button>
+      <button class="btn btn-outline-primary" routerLink="/feedback">
+        Feedbacks
+      </button>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title">
+                    <h1>Clientes</h1>
+                    <button class="btn btn-primary" routerLink="/cadastro/novo">+ Novo Cliente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container mt-4">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Nome</th>
+      <th scope="col">SENHA</th>
+      <th scope="col">EMAIL</th>
+      <th scope="col">TELEFONE</th>
+      <th scope="col">Editar/Excluir</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{cliente.id_usuario}}</td>
+      <td>{{cliente.nome}}</td>
+      <td>{{cliente.senha}}</td>
+      <td>{{cliente.email}}</td>
+      <td>{{cliente.telefone}}</td>
+      <td >
+          <a style="margin-right:5%;" class="btn btn-primary" title="editar" routerLink="/cadastro/editar/{{cliente.id_usuario}}">
+              <i class="fa-regular fa-pen-to-square fa-bounce" style="color: #ffffff;"></i>
+          </a>
+
+          <a (click)="delete(cliente)" class="btn btn-danger" title="excluir">
+              <i class="fa-solid fa-trash fa-bounce" style="color: #ffffff;"></i>
+          </a>
+      </td>
+  </tr>
+  </tbody>
+</table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
