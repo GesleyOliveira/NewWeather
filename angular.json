@@ -44,8 +44,10 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/NewWeather/"
             },
+
             "development": {
               "buildOptimizer": false,
               "optimization": false,
