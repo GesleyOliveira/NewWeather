@@ -1,27 +1,70 @@
-# NewWeather
+# Projeto Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Este projeto foi gerado com a versão 16.2.0 do Angular CLI.
 
-## Development server
+## Começando
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Servidor de Desenvolvimento
 
-## Code scaffolding
+Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+bash
+ng serve
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Navegue até http://localhost:4200/ em seu navegador. A aplicação será recarregada automaticamente sempre que você alterar qualquer um dos arquivos de origem.
 
-## Running unit tests
+### Estrutura de Código
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para gerar um novo componente, utilize o comando:
 
-## Running end-to-end tests
+bash
+ng generate component nome-do-componente
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+Você também pode usar os seguintes comandos para gerar outros elementos:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+bash
+ng generate directive|pipe|service|class|guard|interface|enum|module
+
+
+## Construção do Projeto
+
+Para construir o projeto, execute:
+
+bash
+ng build
+
+
+Os artefatos de construção serão armazenados no diretório
+dist/
+.
+
+## Testes
+
+### Testes Unitários
+
+Para executar os testes unitários, utilize:
+
+bash
+ng test
+
+
+Isso executará os testes unitários via Karma.
+
+### Testes End-to-End
+
+Para executar os testes end-to-end, utilize:
+
+bash
+ng e2e
+
+
+Para usar este comando, você precisa primeiro adicionar um pacote que implemente as capacidades de teste end-to-end.
+
+## Ajuda Adicional
+
+Para obter mais ajuda sobre o Angular CLI, use:
+
+bash
+ng help
