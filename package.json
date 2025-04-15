@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:gh-pages": "ng build --configuration production --base-href \"/NewWeather/\"",
+    "deploy": "npx angular-cli-ghpages --dir=dist/New_Weather"
   },
   "private": true,
   "dependencies": {
