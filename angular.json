@@ -46,7 +46,7 @@
               ],
               "outputHashing": "all",
               "baseHref": "/NewWeather/"
-            },
+            },git
 
             "development": {
               "buildOptimizer": false,
